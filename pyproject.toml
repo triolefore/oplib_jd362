@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triolefore-oplib_jd362"
+version = "0.1.0"
+description = "从样本里推断算子库维护工程师·推理服务的限流与排队应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "triolefore" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://triolefore.github.io"
+Repository = "https://github.com/triolefore/oplib_jd362"
+Issues = "https://github.com/triolefore/oplib_jd362/issues"
+
+[project.scripts]
+oplib_jd362 = "oplib_jd362:main"
+
+[tool.setuptools]
+py-modules = ["oplib_jd362"]
